@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("taufiqDatau.plugins", {
+require("lazy").setup({  { import =  "taufiqDatau.plugins" },{import = "taufiqDatau.plugins.lsp"} }, {
   checker = {
     enabled = true,
     notify = false,
