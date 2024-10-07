@@ -46,7 +46,7 @@ return {
 "|  | \\   |  |  `---.   `'  '-'  '    \\   /   (_|  |   |  |   |  | ",
 "`--'  `--'  `------'     `-----'      `-'      `--'   `--'   `--' ",
       }
-    dashboard.section.header.val = taufiqVim
+    dashboard.section.header.val = neovim
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
