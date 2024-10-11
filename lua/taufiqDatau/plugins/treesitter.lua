@@ -22,7 +22,6 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        "tsserver",
         "json",
         "javascript",
         "typescript",
