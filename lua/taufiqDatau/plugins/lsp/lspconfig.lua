@@ -124,6 +124,22 @@ return {
           },
         })
       end,
+
+    ["gopls"] = function()
+    -- configure go language server
+      lspconfig["gopls"].setup({
+        capabilities = capabilities,
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+            },
+            staticcheck = true,
+          },
+        },
+        filetypes = { "go", "gomod", "gowork", "gotmpl" },
+      })
+    end,
     })
   end,
 }
