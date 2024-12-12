@@ -6,7 +6,7 @@ return {
       require("toggleterm").setup({
         -- Add your preferred configuration options here
         size = 20,
-        open_mapping = [[<leader>tt]],
+        open_mapping = [[<C-t>]],
         hide_numbers = true,
         shade_filetypes = {},
         shade_terminals = true,
