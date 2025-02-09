@@ -85,7 +85,7 @@ return {
           capabilities = capabilities,
         })
       end,
-      
+
       ["angularls"] = function()
         --configure angular language server
         lspconfig["angularls"].setup({
@@ -125,21 +125,21 @@ return {
         })
       end,
 
-    ["gopls"] = function()
-    -- configure go language server
-      lspconfig["gopls"].setup({
-        capabilities = capabilities,
-        settings = {
-          gopls = {
-            analyses = {
-              unusedparams = true,
+      ["gopls"] = function()
+        -- configure go language server
+        lspconfig["gopls"].setup({
+          capabilities = capabilities,
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+              },
+              staticcheck = true,
             },
-            staticcheck = true,
           },
-        },
-        filetypes = { "go", "gomod", "gowork", "gotmpl" },
-      })
-    end,
+          filetypes = { "go", "gomod", "gowork", "gotmpl" },
+        })
+      end,
     })
   end,
 }

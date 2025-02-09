@@ -30,20 +30,16 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "angularls",
-        "svelte",
-        "lua_ls",
         "graphql",
-        "emmet_ls",
         "gopls",
       },
+      automatic_installation = true,
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "eslint_d",
       },
     })
   end,
